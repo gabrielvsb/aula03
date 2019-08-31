@@ -7,3 +7,5 @@ class Noticia(models.Model):
         verbose_name_plural = 'Noticias'
     titulo = models.CharField('titulo', max_length=128)
     conteudo = models.TextField()
+    def __str__(self):
+        return self.titulo
